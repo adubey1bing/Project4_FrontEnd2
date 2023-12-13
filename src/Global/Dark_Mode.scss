@@ -1,0 +1,86 @@
+.app.dark{
+    select {
+        background-color: #333; /* Set background color for select in dark mode */
+        color: white; /* Set text color for select in dark mode */
+        border: 1px solid #555; /* Set border color for select in dark mode */
+    }
+    select::-ms-expand {
+        color: white; /* Set caret color for select in dark mode for IE */
+    }
+
+    /* If you want to style the dropdown arrow (caret) for other browsers */
+    select::after {
+        content: '\25BC'; /* Unicode character for a downward arrow */
+        color: white; /* Set caret color for select in dark mode */
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+    .paper-field{
+        background-color: #333;
+    }
+    input{
+        background-color: transparent;
+    }
+    background-color: #222;
+    *{
+        color: white;
+    }
+    .table{
+        background-color: #222;
+        color: white;
+    }
+    .navbar{
+        background-color: black;
+        color: white;
+        box-shadow: none;
+        border: none;
+        .search{
+            border: none;
+            background-color: rgba(255, 255, 255, 0.080);
+            color: white;
+        }
+    }
+    .step{
+        color: white;
+    }
+    .step-label{
+        color: white !important;
+    }
+    .sidebar{
+        background-color: black;
+        box-shadow: none;
+        color: white;
+        border: none;
+        .middle{
+            ul{
+                .title{
+                    color: white;
+                }
+                a{
+                    transition: 0.1s;
+                    span{
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+        }
+        a:hover{
+            background-color: rgba(255, 255, 255, 0.1);
+            
+        }
+        
+    }
+    .widget, .featured,.chart,.listContainer{
+        background-color: black;
+        color: white;
+        .left {
+            .counter{
+                color: white;
+            }
+        }
+        
+    }
+    
+}

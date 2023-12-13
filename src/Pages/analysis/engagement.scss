@@ -1,0 +1,84 @@
+.political{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .Container{
+        flex: 6;
+        .head-political{
+            margin-top: 20px;
+        }
+        h1{
+            margin: 20px;
+            text-transform: capitalize;
+            user-select: none;
+            color: #333;
+            font-size: 24px;
+        }
+        .charts{
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+
+    }
+}
+.head-political{
+    margin-bottom: 20px;
+    margin-left: 450px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    color: rgb(220, 20, 103);
+    font-size: 20px;
+    font-weight: bold;
+    user-select: none;
+    -webkit-user-drag: none;
+
+}
+/* political.scss */
+option[default] {
+    display: none;
+  }
+.dropdown-container-top{
+    margin-bottom: 20px;
+    margin-left: 350px;
+}
+.dropdown-container{
+    margin-left: 150px;
+}
+.paper-field .dropdown label {
+    font-family: 'sans-serif'; // Replace with the desired font
+    font-size: 16px; // Replace with the desired font size// Replace with the desired color
+  }
+.dropdown {
+    margin-bottom: 20px; /* Add spacing between dropdowns */
+    margin-left: 120px;
+    border-radius: 10px; /* Adjust the value to control the corner radius */
+    padding: 8px;
+}
+
+label {
+    font-size: 16px;
+    margin-top:10px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+select {
+    width: 50%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+select:hover,
+select:focus {
+    border-color: red; /* Change border color on hover/focus */
+}

@@ -1,0 +1,87 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    // border-bottom: 0.5px solid rgb(230, 227, 227);
+    font-size: 14px;
+    color: #555;
+    box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.1);
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        justify-content: space-between;
+        width: 100%;
+        .search{
+            display: flex;
+            align-items: center;
+            border: 1px solid lightgray;
+            padding: 5px 15px;
+            border-radius: 10px;
+            input{
+                outline: none;
+                border: none;
+                background-color: transparent;
+                margin-right: 4px;
+                &::placeholder{
+                    font-size: 12px;
+                    user-select: none;
+                    -webkit-user-drag: none;
+                }
+            }
+            .icon{
+                font-size: 20px;
+            }
+        }
+        .items{
+            display: flex;
+            align-items: center;
+            .item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 20px;
+                user-select: none;
+                position: relative;
+                &:hover{
+                    cursor: pointer;
+                }
+                .icon{
+                    font-size: 20px;
+                    margin-right: 5px;
+
+                }
+                .avatar{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    user-select: none;
+                    -webkit-user-drag: none;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .notif-counter{
+                    width: 15px;
+                    height: 15px;
+                    background-color: crimson;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 10px;
+                    border-radius: 50%;
+                    font-family: inherit;
+                    font-weight: bold;
+                    position: absolute;
+                    top: -5px;
+                    right: 0px;
+
+                }
+            }
+            
+        }
+    }
+}
